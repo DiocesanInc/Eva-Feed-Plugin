@@ -1,0 +1,8 @@
+.eva-feed-block {
+    background-color: rgba(209, 233, 255, 0.7);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    margin-inline: auto;
+}
