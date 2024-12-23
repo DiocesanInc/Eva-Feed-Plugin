@@ -4,7 +4,7 @@
 Plugin Name: DPI Eva Feed
 Plugin URI: http://www.diocesan.com
 Description: Integration with Evangelus
-Version: 0.9.4
+Version: 0.9.5
 Author: Diocesan
 Author URI: http://www.diocesan.com
 License: GPLv2
