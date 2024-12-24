@@ -4,7 +4,7 @@
 Plugin Name: DPI Eva Feed
 Plugin URI: http://www.diocesan.com
 Description: Integration with Evangelus
-Version: 0.9.5
+Version: 1.0
 Author: Diocesan
 Author URI: http://www.diocesan.com
 License: GPLv2
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) exit;
 // constants
 define('DPI_EVA_FEED_ROOT', __FILE__);
 define('DPI_EVA_FEED_DIR', __DIR__);
-define('DPI_EVA_FEED_VER', '0.9.5');
+define('DPI_EVA_FEED_VER', '1.0');
 define('DPI_EVA_FEED_CPT', 'eva');
 define('DPI_EVA_FEED_CPT_STREAM_ID_COL', 'eva-feed-stream-id');
 define('DPI_EVA_STREAM_CPT', 'eva-stream');
