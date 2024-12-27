@@ -36,7 +36,6 @@ require_once(ABSPATH . 'wp-admin/includes/image.php');
 add_action('init', function () {
 
     $plugin = Eva\Plugin\Controller::getInstance();
-    $plugin->checkForUpdates();
     $plugin->registerCPT();
     $plugin->registerEVAStreamCPT();
     $plugin->init();
@@ -410,3 +409,21 @@ function eva_archive_title ( $title ) {
     return $title;
 
 };
+
+// Check for updates
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+require DPI_EVA_FEED_DIR . '/plugin-updates/plugin-update-checker.php';
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+
+	'https://github.com/DiocesanInc/Eva-Feed-Plugin',
+
+	DPI_EVA_FEED_DIR . '/dpi-eva-feed.php',
+
+	'dpi-eva-feed'
+
+);
+
+// Set branch
+$myUpdateChecker->setBranch('main');
