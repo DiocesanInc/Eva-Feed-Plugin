@@ -1,7 +1,6 @@
 <?php
 
 namespace Eva\Plugin;
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 // prevent direct access
 if (!defined('ABSPATH')) exit;
 
@@ -32,20 +31,6 @@ class Controller
         }
 
         return self::$instance;
-    }
-
-    /**
-     * Check for updates, alert wp if there are any
-     */
-    public function checkForUpdates()
-    {
-        //return false;
-        require DPI_EVA_FEED_DIR . '/plugin-updates/plugin-update-checker.php';
-       $myUpdateChecker = PucFactory::buildUpdateChecker(
-            'https://github.com/DiocesanInc/Eva-Feed-Plugin',
-            DPI_EVA_FEED_DIR . '/dpi-eva-feed.php',
-            'dpi-eva-feed'
-        );				// Set branch		$myUpdateChecker->setBranch('main');
     }
 
     /**
