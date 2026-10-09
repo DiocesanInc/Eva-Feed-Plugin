@@ -311,12 +311,8 @@ function check_eva_feed()
 						
 						$post_title = wp_strip_all_tags((string)$feed_item->title);
 						
-						// Double check if a post exists based on title
-						if ( ! post_exists($post_title,'','',DPI_EVA_FEED_CPT) ) { 
-
-							// Insert the post into the database
-							$post_id = wp_insert_post($eva_item);
-						}
+						// Insert the post into the database
+						$post_id = wp_insert_post($eva_item);
                     }
 
 
